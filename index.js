@@ -14,7 +14,7 @@ async function login() {
 	// desabilita verificação de webdriver
 	await page.evaluateOnNewDocument(() => {
 		Object.defineProperty(navigator, 'webdriver', {
-			get: () => false
+			get: () => false 
 		})
 	});
 	// digita email e senha
